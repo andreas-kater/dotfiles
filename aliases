@@ -1,0 +1,58 @@
+SCRIPTS_PATH='~/code/cookbook/scripts'
+
+alias dvelp='~/code/underlay/bin/dvelp'
+alias d='~/code/underlay/bin/dvelp'
+
+#Budler
+alias be='bundle exec'
+
+#Directories
+alias home='cd ~/'
+
+#GIT
+alias git=hub
+alias gcp='git cherry-pick'
+alias gmf=$SCRIPTS_PATH/git_merge_pull_request.sh
+alias gps='staging deploy'
+alias gpp='production deploy'
+alias gpr='git pull-request -c'
+alias grbi='git rebase -i'
+
+#Heroku
+alias hc='staging console'
+alias hcp='production console'
+alias hm='staging migrate'
+alias hmp='production migrate'
+alias hlg='staging tail'
+alias hlgp='production tail'
+alias hsc=$SCRIPTS_PATH/heroku_sync_config.sh
+
+#NGROK
+alias ngk='~/code/src/ngrok http'
+
+#PARITY
+alias drp='development restore production'
+alias drs='development restore staging'
+
+#Rails
+alias rc='rails c'
+alias rg='rails g'
+
+#Rails-rake
+alias rk='rake'
+alias rkm='rake db:migrate'
+alias rkr='rake db:rollback'
+alias rks='rake db:setup'
+
+#Rails-rspec
+alias rspc='rspec spec'
+
+#TMUX
+alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
+
+#VIM
+alias v='vim'
+
+#ZSH
+alias relaod=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
