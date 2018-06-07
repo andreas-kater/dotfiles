@@ -5,6 +5,8 @@
 let g:ale_linters = {
 \ 'javascript': []
 \ }
+let g:ale_ruby_rails_best_practices_executable = 'bundle'
+let g:ale_ruby_rubocop_executable = 'bundle'
 
 nmap <silent> [r <Plug>(ale_previous_wrap)
 nmap <silent> ]r <Plug>(ale_next_wrap)
