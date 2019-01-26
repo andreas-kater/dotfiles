@@ -17,6 +17,18 @@ alias gps='staging deploy'
 alias gpp='production deploy'
 alias gpr='git pull-request -c'
 alias grbi='git rebase -i'
+alias gl='git l'
+alias glcw='git log -E -i --grep'
+alias unstage='reset'
+alias gcm='git commit -m'
+alias gc='git checkout'
+alias gs='git status'
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gl='git log --oneline --decorate --graph --all'
+alias gca='git commit --amend --no-edit'
+alias gaa='git add --all'
+alias gap='git add --patch'
 
 #Heroku
 alias hc='staging console'
@@ -49,6 +61,9 @@ alias rspc='rspec spec'
 
 #TMUX
 alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
+
+#Tree
+alias t='tree'
 
 #VIM
 alias v='vim'
