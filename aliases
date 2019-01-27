@@ -3,6 +3,9 @@ SCRIPTS_PATH='~/code/cookbook/scripts'
 alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
 
+# General
+alias c=clear
+
 #Budler
 alias be='bundle exec'
 
