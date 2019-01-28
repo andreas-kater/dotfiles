@@ -1,6 +1,8 @@
 " --------------------
 " PACKAGES
 " --------------------
+set runtimepath+=~/.vim/bundle/nerdtree
+map <C-n> :NERDTreeToggle<CR>
 " ale
 let g:ale_linters = {
 \ 'javascript': []
@@ -135,6 +137,7 @@ nnoremap <Leader>irb :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd'
 nnoremap <Leader>sf :VtrSendFile<cr>
 nnoremap <Leader>sl :VtrSendLinesToRunner<cr>
 
+map <Leader>m :NERDTreeToggle<CR>
 map <Leader>a :call RunAllSpecs()<cr>
 map <Leader>bb :!bundle install<cr>
 map <Leader>e :w<cr>:Explore<cr>

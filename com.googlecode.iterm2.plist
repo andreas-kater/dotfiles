@@ -555,8 +555,10 @@
 	<string>152 776 400 129 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 606 620 392 0 0 1920 1200 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>481 311 796 486 0 0 1920 1177 </string>
+	<string>884 460 937 514 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 650 452 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -769,7 +771,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>500</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -1179,7 +1181,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Smart Selection Rules</key>
@@ -1273,6 +1275,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -1298,7 +1302,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>1</integer>
+			<integer>6</integer>
 			<key>Working Directory</key>
 			<string>/Users/andreaskater/Dev</string>
 		</dict>
@@ -2114,7 +2118,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-01-23T10:28:16Z</date>
+	<date>2019-01-27T17:29:19Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
