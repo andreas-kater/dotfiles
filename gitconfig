@@ -15,7 +15,7 @@
 [merge]
   ff = only
 [commit]
-  template = ~/.git_template/commit
+  template = ~/.git_template/commit_message
 [fetch]
   prune = true
 [rebase]
@@ -24,3 +24,6 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+	name = Andreas Kater
+	email = andreas.kater@gmail.com

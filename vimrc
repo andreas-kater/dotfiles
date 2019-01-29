@@ -154,7 +154,7 @@ map <Leader>sl :sort<cr>
 map <Leader>t :call RunCurrentSpecFile()<cr>
 map <Leader>u :Eunittest<cr>
 map <Leader>v :vsp<cr>
-map <Leader>vi :tabe ~/Dropbox/dotfiles/.vimrc<cr>
+map <Leader>vi :tabe ~/.vimrc<cr>
 
 " rename current file - thanks Gary Bernhardt
 function! RenameFile()

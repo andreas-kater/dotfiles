@@ -29,8 +29,6 @@ alias gs='git status'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gl='git log --oneline --decorate --graph --all'
-alias gca='git commit --amend --no-edit'
-alias gaa='git add --all'
 alias gap='git add --patch'
 
 #Heroku
