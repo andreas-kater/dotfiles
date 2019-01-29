@@ -1,6 +1,13 @@
 " --------------------
 " PACKAGES
 " --------------------
+"  Thoughtbot Upcase Videos
+imap jk <Esc>
+imap kj <Esc>
+nmap <Leader>vr :sp $MYVIMRC<CR>
+nmap <Leader>so :source $MYVIMRC<CR>
+
+"  NERDTREE
 set runtimepath+=~/.vim/bundle/nerdtree
 map <C-n> :NERDTreeToggle<CR>
 " ale
