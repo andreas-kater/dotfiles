@@ -15,6 +15,7 @@ alias home='cd ~/'
 #GIT
 alias git=hub
 alias gcp='git cherry-pick'
+alias gsf='git show --pretty="" --name-only'
 alias gmf=$SCRIPTS_PATH/git_merge_pull_request.sh
 alias gps='staging deploy'
 alias gpp='production deploy'
