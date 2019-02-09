@@ -8,9 +8,9 @@ source $ZSH/oh-my-zsh.sh
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # tmux
-if [[ ! $TERM =~ screen ]]; then
-  exec tmux
-fi
+#if [[ ! $TERM =~ screen ]]; then
+#  exec tmux
+#fi
 
 # vim
 export EDITOR='vim'
