@@ -7,11 +7,11 @@ imap kj <Esc>
 
 "  NERDTREE
 set runtimepath+=~/.vim/bundle/nerdtree
-map <C-n> :NERDTreeToggle<CR>
+
 " ale
 let g:ale_linters = {
-\ 'javascript': []
-\ }
+      \ 'javascript': []
+      \ }
 let g:ale_ruby_rails_best_practices_executable = 'bundle'
 let g:ale_ruby_rubocop_executable = 'bundle'
 
@@ -148,6 +148,7 @@ map <Leader>bb :!bundle install<cr>
 map <Leader>e :w<cr>:Explore<cr>
 map <Leader>f :Ack<space>
 map <Leader>fc :Ack <C-R><C-W><cr>
+map <Leader>g gg=G<space>
 map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
 map <Leader>l :call RunLastSpec()<cr>
 map <Leader>q :copen<cr>
