@@ -117,6 +117,8 @@ set shiftwidth=2
 set showcmd " display incomplete commands
 set smartcase " searching
 set smarttab
+set splitright
+set splitbelow
 set tabstop=2
 set wildignore+=tmp/** " ignore stuff that can't be opened
 set wildmode=longest,full
@@ -161,7 +163,7 @@ map <Leader>t :call RunCurrentSpecFile()<cr>
 map <Leader>u :Eunittest<cr>
 map <Leader>v :vsp<cr>
 map <Leader>h :sp<cr>
-map <Leader>vi :sp ~/.vimrc<cr>
+map <Leader>vr :vsp ~/.vimrc<cr>
 
 " rename current file - thanks Gary Bernhardt
 function! RenameFile()
