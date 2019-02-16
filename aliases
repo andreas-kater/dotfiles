@@ -1,10 +1,14 @@
-SCRIPTS_PATH='~/code/cookbook/scripts'
+SCRIPTS_PATH='~/dev/dotfiles/scripts'
 
 alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
 
 # General
 alias c=clear
+
+# Scripts
+alias mc=$SCRIPTS_PATH/mc.sh
+alias gcmp=$SCRIPTS_PATH/gcmp.sh
 
 #Budler
 alias be='bundle exec'
