@@ -7,6 +7,7 @@ alias d='~/code/underlay/bin/dvelp'
 alias c=clear
 
 # Scripts
+alias gmf=$SCRIPTS_PATH/git_merge_pull_request.sh
 alias mc=$SCRIPTS_PATH/mc.sh
 alias gcmp=$SCRIPTS_PATH/gcmp.sh
 
@@ -20,7 +21,6 @@ alias home='cd ~/'
 alias git=hub
 alias gcp='git cherry-pick'
 alias gsf='git show --pretty="" --name-only'
-alias gmf=$SCRIPTS_PATH/git_merge_pull_request.sh
 alias gps='staging deploy'
 alias gpp='production deploy'
 alias gpr='git pull-request -c'
