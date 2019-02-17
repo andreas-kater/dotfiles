@@ -7,10 +7,12 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-# tmux
-#if [[ ! $TERM =~ screen ]]; then
-#  exec tmux
-#fi
+#tmux
+if [[ ! $TERM =~ screen ]]; then
+  if [ $TERM_PROGRAM = "iTerm.app" ]; then 
+    exec tmux
+  fi
+fi
 
 # vim
 export EDITOR='vim'
