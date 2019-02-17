@@ -3,12 +3,7 @@
 set -e
 set -o pipefail
 
-echo $1
-cmd="ls -al"
-gcm="gcm $1"
-#$cmd
-$gcm
-echo "ran gcmp"
-
-#gcm
-#gl
+git add .
+git commit -m "$1"
+git push origin master
+git --no-pager log --oneline --decorate --graph --all -n 20
