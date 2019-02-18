@@ -19,6 +19,10 @@ nmap <silent> [r <Plug>(ale_previous_wrap)
 nmap <silent> ]r <Plug>(ale_next_wrap)
 
 set updatetime=1000
+
+" start new files in insert mode
+autocmd BufNewFile * startinsert
+
 autocmd CursorHold * call ale#Queue(0)
 autocmd CursorHoldI * call ale#Queue(0)
 autocmd InsertLeave * call ale#Queue(0)
