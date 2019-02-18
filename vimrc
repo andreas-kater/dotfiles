@@ -19,7 +19,8 @@ nmap <silent> [r <Plug>(ale_previous_wrap)
 nmap <silent> ]r <Plug>(ale_next_wrap)
 
 set updatetime=1000
-
+" automatically update files that change due to e.g. switching branch, that I have not yet edited
+set autoread
 " start new files in insert mode
 autocmd BufNewFile * startinsert
 
