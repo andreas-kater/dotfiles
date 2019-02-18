@@ -7,9 +7,10 @@ alias d='~/code/underlay/bin/dvelp'
 alias c=clear
 
 # Scripts
-alias gmf=$SCRIPTS_PATH/git_merge_pull_request.sh
-alias mc=$SCRIPTS_PATH/mc.sh
+alias gmp=$SCRIPTS_PATH/git_merge_pull_request.sh
+alias gfp=$SCRIPTS_PATH/git_fix_push.sh
 alias gcmp=$SCRIPTS_PATH/gcmp.sh
+alias mc=$SCRIPTS_PATH/mc.sh
 
 #Budler
 alias be='bundle exec'
