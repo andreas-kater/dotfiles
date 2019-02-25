@@ -2,6 +2,7 @@ SCRIPTS_PATH='~/dev/dotfiles/scripts'
 
 alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
+alias '$'='' 
 
 # General
 alias c=clear
