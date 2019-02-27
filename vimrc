@@ -161,6 +161,7 @@ map <Leader>l :call RunLastSpec()<cr>
 map <Leader>q :copen<cr>
 map <Leader>p :set paste<cr><esc>"*]p:set nopaste<cr>
 map <Leader>ra :%s/
+map <Leader>r :source ~/.vimrc<cr>
 map <Leader>s :call RunNearestSpec()<cr>
 map <Leader>sc :sp db/schema.rb<cr>
 map <Leader>sl :sort<cr>
