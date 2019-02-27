@@ -71,7 +71,7 @@ else
 endif
 
 " make it obvious where 80 characters is
-set textwidth=80
+set textwidth=0
 set colorcolumn=+1
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
@@ -155,7 +155,7 @@ map <Leader>bb :!bundle install<cr>
 map <Leader>e :w<cr>:Explore<cr>
 map <Leader>f :Ack<space>
 map <Leader>fc :Ack <C-R><C-W><cr>
-map <Leader>g gg=G<space>
+map <Leader>g gg=G``<space>
 map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
 map <Leader>l :call RunLastSpec()<cr>
 map <Leader>q :copen<cr>
