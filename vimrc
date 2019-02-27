@@ -8,6 +8,9 @@ imap kj <Esc>
 "  NERDTREE
 set runtimepath+=~/.vim/bundle/nerdtree
 
+" copying visually selected code into clipboard:
+set clipboard=unnamed
+
 " ale
 let g:ale_linters = {
       \ 'javascript': []
