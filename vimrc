@@ -74,7 +74,7 @@ else
 endif
 
 " make it obvious where 80 characters is
-set textwidth=0
+set textwidth=80
 set colorcolumn=+1
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
