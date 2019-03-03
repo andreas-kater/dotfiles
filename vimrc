@@ -13,12 +13,15 @@ set clipboard=unnamed
 
 " ale
 let g:ale_linters = {
-      \ 'javascript': []
+      \   'javascript': [],
+      \   'typescript': ['tslint'],
+      \   'python': ['flake8', 'pylint']
       \ }
 let g:ale_fixers = {
       \   '*': ['remove_trailing_lines', 'trim_whitespace'],
       \   'javascript': ['eslint'],
       \   'typescript': ['tslint'],
+      \   'python': ['autopep8', 'yapf']
       \}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
@@ -33,6 +36,8 @@ set updatetime=1000
 set autoread
 " start new files in insert mode
 autocmd BufNewFile * startinsert
+" fix formatting on save
+autocmd BufWritePre * :normal gg=G``
 
 autocmd CursorHold * call ale#Queue(0)
 autocmd CursorHoldI * call ale#Queue(0)
@@ -102,6 +107,7 @@ nnoremap ; :
 filetype on " Enable filetype detection
 filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
+
 set autoindent
 set backspace=indent,eol,start " backspace for dummys
 set backupdir=/tmp/
@@ -162,6 +168,8 @@ nnoremap <Leader>sl :VtrSendLinesToRunner<cr>
 map <Leader>m :NERDTreeToggle<CR>
 map <Leader>a :call RunAllSpecs()<cr>
 map <Leader>bb :!bundle install<cr>
+map <Leader>d :ALEGoToDefinition<cr>
+map <Leader>s :ALEFindReferences<cr>
 map <Leader>e :w<cr>:Explore<cr>
 map <Leader>f :Ack<space>
 map <Leader>fc :Ack <C-R><C-W><cr>
@@ -172,7 +180,6 @@ map <Leader>q :copen<cr>
 map <Leader>p :set paste<cr><esc>"*]p:set nopaste<cr>
 map <Leader>ra :%s/
 map <Leader>r :source ~/.vimrc<cr>
-map <Leader>s :call RunNearestSpec()<cr>
 map <Leader>sc :sp db/schema.rb<cr>
 map <Leader>sl :sort<cr>
 map <Leader>t :call RunCurrentSpecFile()<cr>
@@ -209,11 +216,9 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
 " . scan the current buffer, b scan other loaded buffers that are in the buffer
-" list, u scan the unloaded buffers that 
+" list, u scan the unloaded buffers that
 " are in the buffer list, w scan buffers from other windows, t tag completion
 set complete=.,b,u,w,t,]
 
 " Keyword list
 set complete+=k~/dev/dotfiles/tabcomplete_list.txt
-
-
