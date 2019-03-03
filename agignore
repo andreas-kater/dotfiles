@@ -1,6 +1,4 @@
-.keep
 log
-tags
 tmp
 vendor
 .git/
