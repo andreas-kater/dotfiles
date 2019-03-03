@@ -15,6 +15,13 @@ set clipboard=unnamed
 let g:ale_linters = {
       \ 'javascript': []
       \ }
+let g:ale_fixers = {
+      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \   'javascript': ['eslint'],
+      \   'typescript': ['tslint'],
+      \}
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
 let g:ale_ruby_rails_best_practices_executable = 'bundle'
 let g:ale_ruby_rubocop_executable = 'bundle'
 
