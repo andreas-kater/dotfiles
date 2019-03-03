@@ -165,27 +165,28 @@ nnoremap <Leader>irb :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd'
 nnoremap <Leader>sf :VtrSendFile<cr>
 nnoremap <Leader>sl :VtrSendLinesToRunner<cr>
 
-map <Leader>m :NERDTreeToggle<CR>
 map <Leader>a :call RunAllSpecs()<cr>
 map <Leader>bb :!bundle install<cr>
 map <Leader>d :ALEGoToDefinition<cr>
-map <Leader>s :ALEFindReferences<cr>
 map <Leader>e :w<cr>:Explore<cr>
 map <Leader>f :Ack<space>
 map <Leader>fc :Ack <C-R><C-W><cr>
 map <Leader>g gg=G``<space>
 map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
+map <Leader>h :sp<cr>
+map <Leader>i :TsuImport<cr>
 map <Leader>l :call RunLastSpec()<cr>
-map <Leader>q :copen<cr>
+map <Leader>m :NERDTreeToggle<CR>
 map <Leader>p :set paste<cr><esc>"*]p:set nopaste<cr>
-map <Leader>ra :%s/
+map <Leader>q :copen<cr>
 map <Leader>r :source ~/.vimrc<cr>
+map <Leader>ra :%s/
+map <Leader>s :ALEFindReferences<cr>
 map <Leader>sc :sp db/schema.rb<cr>
 map <Leader>sl :sort<cr>
 map <Leader>t :call RunCurrentSpecFile()<cr>
 map <Leader>u :Eunittest<cr>
 map <Leader>v :vsp<cr>
-map <Leader>h :sp<cr>
 map <Leader>vr :vsp ~/.vimrc<cr>
 
 " rename current file - thanks Gary Bernhardt
@@ -257,3 +258,4 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+autocmd FileType typescript setlocal completeopt+=menu,preview
