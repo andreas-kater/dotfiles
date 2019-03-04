@@ -58,7 +58,7 @@ let g:airline_section_z = '%3l:%3v'
 " ctrlp
 " use silver_searcher for lookup
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -u -g ""'
 endif
 let g:ctrlp_use_caching = 0
 set timeoutlen=500 " reduce wait time for amigigous chars
