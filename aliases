@@ -10,7 +10,7 @@ alias c=clear
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
 alias clasp-upload=~/Dev/clasp/my-macros/upload.sh
-alias psc=$SCRIPTS_PATH/paste-screenshot.sh
+alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 
 #Budler
 alias be='bundle exec'

@@ -18,10 +18,9 @@ let g:ale_linters = {
       \   'python': ['flake8', 'pylint']
       \ }
 let g:ale_fixers = {
-      \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \   'javascript': ['eslint'],
-      \   'typescript': ['tslint'],
-      \   'python': ['autopep8', 'yapf']
+      \   'javascript': ['eslint', 'remove_trailing_lines', 'trim_whitespace'],
+      \   'typescript': ['tslint','remove_trailing_lines', 'trim_whitespace'],
+      \   'python': ['autopep8', 'yapf', 'remove_trailing_lines', 'trim_whitespace']
       \}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
@@ -37,7 +36,7 @@ set autoread
 " start new files in insert mode
 autocmd BufNewFile * startinsert
 " fix formatting on save
-autocmd BufWritePre * :normal gg=G``
+autocmd BufWritePre * if index(['markdown'], &ft) < 0 | :normal gg=G``
 
 autocmd CursorHold * call ale#Queue(0)
 autocmd CursorHoldI * call ale#Queue(0)
