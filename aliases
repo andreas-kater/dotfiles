@@ -9,7 +9,7 @@ alias c=clear
 
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
-alias clasp-upload=~/Dev/clasp/my-macros/upload.sh
+alias clasp-start=~/Dev/clasp/my-macros/clasp-start.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 
 #Budler
@@ -26,7 +26,8 @@ alias gc='git checkout'
 alias gcm='git add --all && git commit -m'
 alias gcmp=$SCRIPTS_PATH/git_commit_merge_push.sh
 alias gcp='git cherry-pick'
-alias gdb='git branch -d'
+alias gd='git diff origin/master'
+alias gdb='git checkout master && git checkout master && git branch -D'
 alias gdrb='git push --delete'
 alias gfp=$SCRIPTS_PATH/git_fix_push.sh
 alias git=hub
@@ -35,10 +36,12 @@ alias glcw='git log -E -i --grep'
 alias gmp=$SCRIPTS_PATH/git_merge_pull_request.sh
 alias gpp='production deploy'
 alias gpr='git pull-request -c'
+alias gprb='git checkout --track'
 alias gps='staging deploy'
 alias grbi='git rebase -i'
 alias gs='git status'
 alias gsf='git show --pretty="" --name-only'
+alias gu=$SCRIPTS_PATH/git_update.sh
 alias unstage='reset'
 
 #Heroku
@@ -75,6 +78,7 @@ alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
 
 #Tree
 alias t='tree'
+alias tree='tree -I node_modules|venv'
 
 #VIM
 alias v='vim'
