@@ -13,11 +13,13 @@ set clipboard=unnamed
 
 " ale
 let g:ale_linters = {
-      \   'javascript': [],
+      \   'jsx': ['eslint','stylelint'],
+      \   'javascript': ['eslint','stylelint'],
       \   'typescript': ['tslint'],
       \   'python': ['flake8', 'pylint']
       \ }
 let g:ale_fixers = {
+      \   'jsx': ['eslint','stylelint', 'remove_trailing_lines', 'trim_whitespace'],
       \   'javascript': ['eslint', 'remove_trailing_lines', 'trim_whitespace'],
       \   'typescript': ['tslint','remove_trailing_lines', 'trim_whitespace'],
       \   'python': ['autopep8', 'yapf', 'remove_trailing_lines', 'trim_whitespace']
@@ -93,6 +95,12 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 " CONFIG
 " --------------------
 imap <c-space> <c-x><c-o>
+" save
+nmap <c-f> :w<cr>,r
+imap <c-f> <esc>:w<cr>l,r
+" quit
+nmap <c-g> :q<cr>
+imap <c-g> <esc>:q<cr>
 let g:bufferline_echo = 0 " don't show standard budder
 
 " disable the arrow keys
@@ -173,6 +181,7 @@ map <Leader>e :w<cr>:Explore<cr>
 map <Leader>f :Ack<space>
 map <Leader>fc :Ack <C-R><C-W><cr>
 map <Leader>g gg=G``<space>
+map <Leader>gg gggqG``<space>
 map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
 map <Leader>h :sp<cr>
 map <Leader>i :TsuImport<cr>
@@ -189,6 +198,10 @@ map <Leader>t :call RunCurrentSpecFile()<cr>
 map <Leader>u :Eunittest<cr>
 map <Leader>v :vsp<cr>
 map <Leader>vr :vsp ~/.vimrc<cr>
+
+imap { {<cr><cr>}<Esc><Esc>ki<Tab>
+imap ( ()<Esc>i
+imap [ []<Esc>i
 
 " rename current file - thanks Gary Bernhardt
 function! RenameFile()
@@ -260,3 +273,5 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 autocmd FileType typescript setlocal completeopt+=menu,preview
+
+

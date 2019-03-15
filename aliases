@@ -78,7 +78,7 @@ alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
 
 #Tree
 alias t='tree'
-alias tree='tree -I node_modules|venv'
+alias tree="tree -I 'node_modules|venv'"
 
 #VIM
 alias v='vim'
