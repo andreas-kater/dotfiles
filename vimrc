@@ -13,13 +13,11 @@ set clipboard=unnamed
 
 " ale
 let g:ale_linters = {
-      \   'jsx': ['eslint','stylelint'],
       \   'javascript': ['eslint','stylelint'],
       \   'typescript': ['tslint'],
       \   'python': ['flake8', 'pylint']
       \ }
 let g:ale_fixers = {
-      \   'jsx': ['eslint','stylelint', 'remove_trailing_lines', 'trim_whitespace'],
       \   'javascript': ['eslint', 'remove_trailing_lines', 'trim_whitespace'],
       \   'typescript': ['tslint','remove_trailing_lines', 'trim_whitespace'],
       \   'python': ['autopep8', 'yapf', 'remove_trailing_lines', 'trim_whitespace']
