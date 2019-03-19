@@ -18,6 +18,7 @@ let g:ale_linters = {
       \   'python': ['flake8', 'pylint']
       \ }
 let g:ale_fixers = {
+      \   'markdown': ['trim_whitespace'],
       \   'javascript': ['eslint', 'remove_trailing_lines', 'trim_whitespace'],
       \   'typescript': ['tslint','remove_trailing_lines', 'trim_whitespace'],
       \   'python': ['autopep8', 'yapf', 'remove_trailing_lines', 'trim_whitespace']
@@ -35,7 +36,8 @@ set updatetime=1000
 set autoread
 " start new files in insert mode
 autocmd BufNewFile * startinsert
-" fix formatting on save
+
+" fix formatting on save and exclude markdown
 autocmd BufWritePre * if index(['markdown'], &ft) < 0 | :normal gg=G``
 
 autocmd CursorHold * call ale#Queue(0)
@@ -174,7 +176,9 @@ nmap s ko<Esc>
 
 map <Leader>a :call RunAllSpecs()<cr>
 map <Leader>bb :!bundle install<cr>
+map <Leader>c ggyG``<cr>
 map <Leader>d :ALEGoToDefinition<cr>
+map <Leader>dd :ImportJSGoto<cr>
 map <Leader>e :w<cr>:Explore<cr>
 map <Leader>f :Ack<space>
 map <Leader>fc :Ack <C-R><C-W><cr>
@@ -182,9 +186,10 @@ map <Leader>g gg=G``<space>
 map <Leader>gg gggqG``<space>
 map <Leader>gw :!git add . && git commit -m 'WIP' && git push<cr>
 map <Leader>h :sp<cr>
-map <Leader>i :TsuImport<cr>
+map <Leader>i :ImportJSFix<cr>
 map <Leader>l :call RunLastSpec()<cr>
 map <Leader>m :NERDTreeToggle<CR>
+map <Leader>mb 0i* <Esc><CR>
 map <Leader>p :set paste<cr><esc>"*]p:set nopaste<cr>
 map <Leader>q :copen<cr>
 map <Leader>r :source ~/.vimrc<cr>
@@ -197,7 +202,7 @@ map <Leader>u :Eunittest<cr>
 map <Leader>v :vsp<cr>
 map <Leader>vr :vsp ~/.vimrc<cr>
 
-imap { {<cr><cr>}<Esc><Esc>ki<Tab>
+imap { {}<Esc>i
 imap ( ()<Esc>i
 imap [ []<Esc>i
 
