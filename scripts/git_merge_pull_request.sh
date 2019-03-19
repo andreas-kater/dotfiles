@@ -19,9 +19,6 @@ if [ "$feature_branch" == $target_branch ]; then
   exit 1
 fi
 
-echo "git push"
-git push
-
 echo "git fetch origin"
 git fetch origin
 
