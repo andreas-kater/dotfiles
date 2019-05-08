@@ -6,6 +6,7 @@ alias '$'=''
 
 # General
 alias c=clear
+alias ls='ls -1a'
 
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
@@ -31,7 +32,7 @@ alias gdb='git checkout master && git checkout master && git branch -D'
 alias gdrb='git push --delete'
 alias gfp=$SCRIPTS_PATH/git_fix_push.sh
 alias git=hub
-alias gl='git --no-pager log --oneline --decorate --graph --all -n 20'
+alias gl=$SCRIPTS_PATH/gl.sh
 alias glcw='git log -E -i --grep'
 alias gmp=$SCRIPTS_PATH/git_merge_pull_request.sh
 alias gpp='production deploy'

@@ -9,10 +9,12 @@ source $ZSH/oh-my-zsh.sh
 
 #tmux
 if [[ ! $TERM =~ screen ]]; then
-  if [ $TERM_PROGRAM = "iTerm.app" ]; then 
+  if [ $TERM_PROGRAM = "iTerm.app" ]; then
     exec tmux
   fi
 fi
 
 # vim
 export EDITOR='vim'
+
+export PS1=">> "

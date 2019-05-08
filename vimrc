@@ -1,15 +1,18 @@
 " --------------------
 " PACKAGES
 " --------------------
+let g:vimsyn_embed=0
+
 "  Thoughtbot Upcase Videos
+"autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 imap jk <Esc>
 imap kj <Esc>
 
-"  NERDTREE
-set runtimepath+=~/.vim/bundle/nerdtree
-
+" trying to stop vim from slowing down when it's been open for a while
+set synmaxcol=120
 " copying visually selected code into clipboard:
 set clipboard=unnamed
+set mouse=a
 
 " ale
 let g:ale_linters = {
@@ -24,6 +27,7 @@ let g:ale_fixers = {
       \   'python': ['autopep8', 'yapf', 'remove_trailing_lines', 'trim_whitespace']
       \}
 let g:ale_fix_on_save = 1
+let g:ale_lint_delay = 1000
 let g:ale_completion_enabled = 1
 let g:ale_ruby_rails_best_practices_executable = 'bundle'
 let g:ale_ruby_rubocop_executable = 'bundle'
@@ -34,11 +38,6 @@ nmap <silent> ]r <Plug>(ale_next_wrap)
 set updatetime=1000
 " automatically update files that change due to e.g. switching branch, that I have not yet edited
 set autoread
-" start new files in insert mode
-autocmd BufNewFile * startinsert
-
-" fix formatting on save and exclude markdown
-autocmd BufWritePre * if index(['markdown'], &ft) < 0 | :normal gg=G``
 
 autocmd CursorHold * call ale#Queue(0)
 autocmd CursorHoldI * call ale#Queue(0)
@@ -46,30 +45,20 @@ autocmd InsertLeave * call ale#Queue(0)
 autocmd TextChanged * call ale#Queue(0)
 let g:ale_lint_on_text_changed = 0
 
-" airLine
-set laststatus=2
-let g:airline_theme = 'bubblegum'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline#extensions#syntastic#enabled = 1
-let g:airline_section_b = "%f%m"
-let g:airline_section_c = "%{fugitive#head()}" "display git branch
-let g:airline_section_z = '%3l:%3v'
-
 " ctrlp
 " use silver_searcher for lookup
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g "" '
 endif
 let g:ctrlp_use_caching = 0
-set timeoutlen=500 " reduce wait time for amigigous chars
+let g:ctrlp_open_new_file = 'v'
+let g:ctrlp_open_multiple_files = 'v'
+set timeoutlen=300 " reduce wait time for amigigous chars
+set ttimeoutlen=0 " reduce wait time for amigigous chars
 
 " jshint
 " only check syntax on write
 let JSHintUpdateWriteOnly = 1
-
-" rspec
-let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
 
 " silver_searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -109,6 +98,9 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+"exit search highlighting on entering insert mode
+nnoremap i :noh<cr>i
+
 " map semi-colon to colon
 nmap ; :
 filetype on " Enable filetype detection
@@ -126,6 +118,7 @@ set expandtab
 set grepprg=ag " use sliver_searcher instead of grep
 set gdefault " assume the /g flag on :s substitutions to replace all matches
 set incsearch
+set hlsearch
 set laststatus=2  " always show status line.
 set list " use :set list! to toggle visible whitespace on/off
 set listchars=nbsp:¬,tab:>-,trail:•,extends:➮
@@ -146,7 +139,6 @@ set showcmd " display incomplete commands
 set smartcase " searching
 set smarttab
 set splitright
-set splitbelow
 set tabstop=2
 set wildignore+=tmp/** " ignore stuff that can't be opened
 set wildmode=longest,full
@@ -176,7 +168,8 @@ nmap s ko<Esc>
 
 map <Leader>a :call RunAllSpecs()<cr>
 map <Leader>bb :!bundle install<cr>
-map <Leader>c ggyG``<cr>
+map <Leader>c iconsole.log()<Esc>i
+map <Leader>cp ggyG``<cr>
 map <Leader>d :ALEGoToDefinition<cr>
 map <Leader>dd :ImportJSGoto<cr>
 map <Leader>e :w<cr>:Explore<cr>
@@ -190,6 +183,10 @@ map <Leader>i :ImportJSFix<cr>
 map <Leader>l :call RunLastSpec()<cr>
 map <Leader>m :NERDTreeToggle<CR>
 map <Leader>mb 0i* <Esc><CR>
+map <Leader>ma 0i# <Esc>
+map <Leader>ms 0i## <Esc>
+map <Leader>md 0i### <Esc>
+map <Leader>mf 0i#### <Esc>
 map <Leader>p :set paste<cr><esc>"*]p:set nopaste<cr>
 map <Leader>q :copen<cr>
 map <Leader>r :source ~/.vimrc<cr>
@@ -202,9 +199,9 @@ map <Leader>u :Eunittest<cr>
 map <Leader>v :vsp<cr>
 map <Leader>vr :vsp ~/.vimrc<cr>
 
-imap { {}<Esc>i
-imap ( ()<Esc>i
-imap [ []<Esc>i
+"imap { {}<Esc>i
+"imap ( ()<Esc>i
+"imap [ []<Esc>i
 
 " rename current file - thanks Gary Bernhardt
 function! RenameFile()
@@ -217,6 +214,8 @@ function! RenameFile()
   endif
 endfunction
 map <Leader>n :call RenameFile()<cr>
+
+execute pathogen#infect()
 
 " Tab completion
 " will insert tab at beginning of line,
@@ -232,49 +231,3 @@ function! InsertTabWrapper()
 endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
-
-" . scan the current buffer, b scan other loaded buffers that are in the buffer
-" list, u scan the unloaded buffers that
-" are in the buffer list, w scan buffers from other windows, t tag completion
-set complete=.,b,u,w,t,]
-
-" Keyword list
-set complete+=k~/dev/dotfiles/tabcomplete_list.txt
-
-execute pathogen#infect()
-
-" --------------------
-" NeoBundle
-" --------------------
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
-
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
-" Required:
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-autocmd FileType typescript setlocal completeopt+=menu,preview
-
-
