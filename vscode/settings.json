@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "explorer.sortOrder": "mixed",
     "terminal.integrated.rendererType": "dom",
