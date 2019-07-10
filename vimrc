@@ -9,7 +9,6 @@ imap jk <Esc>
 imap kj <Esc>
 
 " trying to stop vim from slowing down when it's been open for a while
-set synmaxcol=120
 " copying visually selected code into clipboard:
 set clipboard=unnamed
 set mouse=a
@@ -39,10 +38,10 @@ set updatetime=1000
 " automatically update files that change due to e.g. switching branch, that I have not yet edited
 set autoread
 
-autocmd CursorHold * call ale#Queue(0)
-autocmd CursorHoldI * call ale#Queue(0)
-autocmd InsertLeave * call ale#Queue(0)
-autocmd TextChanged * call ale#Queue(0)
+" autocmd CursorHold * call ale#Queue(0)
+" autocmd CursorHoldI * call ale#Queue(0)
+" autocmd InsertLeave * call ale#Queue(0)
+" autocmd TextChanged * call ale#Queue(0)
 let g:ale_lint_on_text_changed = 0
 
 " ctrlp
@@ -215,7 +214,7 @@ function! RenameFile()
 endfunction
 map <Leader>n :call RenameFile()<cr>
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " Tab completion
 " will insert tab at beginning of line,

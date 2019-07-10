@@ -1,5 +1,6 @@
 {
-    "window.zoomLevel": 1,
+    "terminal.integrated.shell.osx": "zsh",
+    "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
     "explorer.sortOrder": "mixed",
     "terminal.integrated.rendererType": "dom",
@@ -15,18 +16,20 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "workbench.colorTheme": "Material Theme Ocean",
     "vim.leader": ",",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
+    "vim.insertModeKeyBindings": [{
+        "before": [
+            "j",
+            "k"
+        ],
+        "after": [
+            "<Esc>"
+        ]
+    }],
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "breadcrumbs.enabled": false,
+    "editor.gotoLocation.multiple": "goto",
+    "python.jediEnabled": false,
 }
