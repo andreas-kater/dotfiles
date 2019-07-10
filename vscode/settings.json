@@ -32,4 +32,5 @@
     "breadcrumbs.enabled": false,
     "editor.gotoLocation.multiple": "goto",
     "python.jediEnabled": false,
+    "vscodeGoogleTranslate.preferredLanguage": "fr",
 }

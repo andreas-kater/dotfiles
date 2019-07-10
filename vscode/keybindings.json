@@ -177,5 +177,13 @@
     {
         "key": "cmd+[IntlBackslash]",
         "command": "workbench.action.quickOpenRecent"
+    },
+    {
+        "key": "alt+cmd+t",
+        "command": "-workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "alt+cmd+t",
+        "command": "extension.translateText"
     }
 ]
