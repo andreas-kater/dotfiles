@@ -4,8 +4,8 @@ alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
 alias '$'=''
 
-alias python=/usr/local/bin/python3.7
-alias pip=/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
+# alias python=/usr/local/bin/python3.7
+# alias pip=/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
 
 # General
 alias c=clear
@@ -17,6 +17,7 @@ alias clasp-start=~/Dev/clasp/my-macros/clasp-start.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 # alias zipp="node $SCRIPTS_PATH/zipp.js"
 alias zipp=$SCRIPTS_PATH/zipp.sh
+alias virtual=$SCRIPTS_PATH/virtual.sh
 
 #Budler
 alias be='bundle exec'

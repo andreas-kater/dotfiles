@@ -33,4 +33,5 @@
     "editor.gotoLocation.multiple": "goto",
     "python.jediEnabled": false,
     "vscodeGoogleTranslate.preferredLanguage": "fr",
+    "editor.minimap.enabled": true,
 }

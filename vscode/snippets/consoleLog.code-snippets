@@ -23,5 +23,14 @@
 			"$2"
 		],
 		"description": "Log output to console"
+	},
+	"if main": {
+		"scope": "python",
+		"prefix": "main",
+		"body": [
+			"if __name__ == '__main__':",
+			"    "
+		],
+		"description": "if __name__ = 'main':"
 	}
 }

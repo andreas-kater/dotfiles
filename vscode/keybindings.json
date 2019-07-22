@@ -185,5 +185,9 @@
     {
         "key": "alt+cmd+t",
         "command": "extension.translateText"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "workbench.action.newWindow"
     }
 ]
