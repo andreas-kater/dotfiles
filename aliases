@@ -13,7 +13,8 @@ alias ls='ls -1a'
 
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
-alias clasp-start=~/Dev/clasp/my-macros/clasp-start.sh
+alias clasp-create=~/Dev/clasp/my-macros/clasp-create.sh
+alias clasp-add=~/Dev/clasp/my-macros/clasp-add.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 # alias zipp="node $SCRIPTS_PATH/zipp.js"
 alias zipp=$SCRIPTS_PATH/zipp.sh

@@ -7,31 +7,42 @@
     "explorer.confirmDragAndDrop": false,
     "html.format.indentInnerHtml": true,
     "html.format.maxPreserveNewLines": 9,
-    "html.format.wrapAttributes": "force-aligned",
+    "html.format.wrapAttributes": "auto",
+    "brace_style": "collapse,preserve-inline",
     "html.format.indentHandlebars": true,
-    "jshint.options": {
-        "esversion": 6
-    },
+    "python.formatting.autopep8Args": [
+        "--ignore",
+        "E402"
+    ],
     "editor.formatOnSave": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.colorTheme": "Material Theme Ocean",
     "vim.leader": ",",
-    "vim.insertModeKeyBindings": [{
-        "before": [
-            "j",
-            "k"
-        ],
-        "after": [
-            "<Esc>"
-        ]
-    }],
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "javascript.updateImportsOnFileMove.enabled": "always",
     "breadcrumbs.enabled": false,
     "editor.gotoLocation.multiple": "goto",
     "python.jediEnabled": false,
     "vscodeGoogleTranslate.preferredLanguage": "fr",
     "editor.minimap.enabled": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "ruby.intellisense": "rubyLocate"
 }

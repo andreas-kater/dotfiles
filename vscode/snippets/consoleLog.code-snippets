@@ -19,10 +19,33 @@
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "l",
 		"body": [
-			"console.log('$1')",
-			"$2"
+			"console.log(`$1`)",
 		],
 		"description": "Log output to console"
+	},
+	"use_strict": {
+		"scope": "javascript,typescript",
+		"prefix": "use",
+		"body": [
+			"'use strict'",
+			"",
+			""
+		],
+	},
+	"require": {
+		"scope": "javascript,typescript",
+		"prefix": "re",
+		"body": [
+			"const $1 = require('$1')",
+		],
+	},
+	"require_fs": {
+		"scope": "javascript,typescript",
+		"prefix": "fs",
+		"body": [
+			"const fs = require('fs')",
+			"$2"
+		],
 	},
 	"if main": {
 		"scope": "python",
@@ -32,5 +55,39 @@
 			"    "
 		],
 		"description": "if __name__ = 'main':"
+	},
+	"magic": {
+		"scope": "python",
+		"prefix": "_",
+		"body": [
+			"__$1__",
+		],
+		"description": "__magic__"
+	},
+	"list(map": {
+		"scope": "python",
+		"prefix": "lm",
+		"body": [
+			"list(map(lambda $1))",
+		],
+		"description": "list(map(lambda $1))"
+	},
+	"init": {
+		"scope": "python",
+		"prefix": "init",
+		"body": [
+			"def __init__(self):",
+			"    "
+		],
+		"description": "def __init__(self):"
+	},
+	"pprint": {
+		"scope": "python",
+		"prefix": "pp",
+		"body": [
+			"from pprint import pprint",
+			"    "
+		],
+		"description": "from pprint import pprint"
 	}
 }
