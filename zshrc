@@ -46,3 +46,5 @@ if [ -f '/Users/andreaskater/google-cloud-sdk/completion.zsh.inc' ]; then . '/Us
 
 # twilio autocomplete setup
 TWILIO_AC_ZSH_SETUP_PATH=/Users/andreaskater/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+# twilio autocomplete setup
+TWILIO_AC_ZSH_SETUP_PATH=/Users/andreaskater/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;

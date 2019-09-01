@@ -89,5 +89,14 @@
 			"    "
 		],
 		"description": "from pprint import pprint"
+	},
+	"pandas": {
+		"scope": "python",
+		"prefix": "pd",
+		"body": [
+			"import pandas as pd",
+			"    "
+		],
+		"description": "import pandas as pd"
 	}
 }
