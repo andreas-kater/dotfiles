@@ -8,6 +8,7 @@ import sys
 import importlib.util
 
 if sys.version_info.major == 3:
+    from db.models import *
     basedir = '/Users/andreaskater/Dev/python'
     folders = ['models', 'modules', 'services']
     packages = []
@@ -26,6 +27,5 @@ if sys.version_info.major == 3:
             modules = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(modules)
             vars()[module_name] = getattr(modules, module_name)
-            print(f'Imported {module_name}')
         except:
             print(f'Could not import {module_name}')

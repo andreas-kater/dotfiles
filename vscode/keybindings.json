@@ -192,5 +192,25 @@
     {
         "key": "ctrl+alt+n",
         "command": "-code-runner.run"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "-workbench.action.output.toggleOutput"
     }
 ]

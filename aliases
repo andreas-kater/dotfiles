@@ -4,8 +4,10 @@ alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
 alias '$'=''
 
-# alias python=/usr/local/bin/python3.7
+alias python='/Users/andreaskater/Dev/python/venv/bin/python'
 # alias pip=/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
+alias jp='jupyter notebook'
+alias testing='python test.py'
 
 # General
 alias c=clear
