@@ -1,13 +1,14 @@
-SCRIPTS_PATH='~/dev/dotfiles/scripts'
+SCRIPTS_PATH='/Users/andreaskater/Dev/dotfiles/scripts'
 
 alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
 alias '$'=''
 
-alias python='/Users/andreaskater/Dev/python/venv/bin/python'
+alias python=python3
+alias add_scripts='/Users/andreaskater/Dev/python/services/GoogleScripts/add_scripts.py'
 # alias pip=/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
 alias jp='jupyter notebook'
-alias testing='python test.py'
+alias testing='python $SCRIPTS_PATH/test.py'
 
 # General
 alias c=clear
@@ -34,7 +35,7 @@ alias gb='git --no-pager branch'
 alias gbo=$SCRIPTS_PATH/git_branch_out.sh
 alias gc='git checkout'
 alias gcm='git add --all && git commit -m'
-alias gcmp=$SCRIPTS_PATH/git_commit_merge_push.sh
+alias gcmp='python /Users/andreaskater/Dev/dotfiles/scripts/gcmp.py'
 alias gcp='git cherry-pick'
 alias gd='git diff origin/master'
 alias gdb='git checkout master && git checkout master && git branch -D'

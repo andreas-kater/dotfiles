@@ -10,9 +10,15 @@
     "html.format.wrapAttributes": "auto",
     "brace_style": "collapse,preserve-inline",
     "html.format.indentHandlebars": true,
-    "python.formatting.autopep8Args": [
+    "thon.formatting.autopep8Args": [
         "--ignore",
         "E402"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=E1101,C0111",
+        // "--errors-only"
+        "--load-plugins",
+        "pylint_flask"
     ],
     "python.pythonPath": "${workspaceFolder}/venv/bin/python",
     "python.linting.pep8Args": [
@@ -44,7 +50,7 @@
     },
     "breadcrumbs.enabled": false,
     "editor.gotoLocation.multiple": "goto",
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "vscodeGoogleTranslate.preferredLanguage": "fr",
     "editor.minimap.enabled": true,
     "[javascript]": {
