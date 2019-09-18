@@ -12,7 +12,6 @@ disable r functions
 
 #python
 export PYTHONPATH="${PYTHONPATH}:/Users/andreaskater/Dev/python"
-export PYTHONPATH="${PYTHONPATH}:/Users/andreaskater/Dev/python/DVELP"
 export PYTHONSTARTUP="/Users/andreaskater/Dev/dotfiles/pythonstartup.py"
 
 #tmux
