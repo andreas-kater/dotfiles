@@ -164,6 +164,8 @@ nmap <Leader>sf :VtrSendFile<cr>
 nmap <Leader>sl :VtrSendLinesToRunner<cr>
 nmap s ko<Esc>
 
+vmap <Tab> >
+vmap <S-Tab> <
 
 map <Leader>a :call RunAllSpecs()<cr>
 map <Leader>bb :!bundle install<cr>

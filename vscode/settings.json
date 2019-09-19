@@ -45,6 +45,33 @@
             ]
         }
     ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "Tab"
+            ],
+            "after": [
+                ">"
+            ]
+        },
+        {
+            "before": [
+                "S-Tab"
+            ],
+            "after": [
+                "<"
+            ]
+        },
+        {
+            "before": [
+                ",",
+                "s"
+            ],
+            "commands": [
+                ":sort"
+            ]
+        }
+    ],
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
