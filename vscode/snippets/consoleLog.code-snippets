@@ -85,8 +85,7 @@
 		"scope": "python",
 		"prefix": "pp",
 		"body": [
-			"from pprint import pprint",
-			"    "
+			"from pprint import pprint"
 		],
 		"description": "from pprint import pprint"
 	},
@@ -94,8 +93,7 @@
 		"scope": "python",
 		"prefix": "pd",
 		"body": [
-			"import pandas as pd",
-			"    "
+			"import pandas as pd"
 		],
 		"description": "import pandas as pd"
 	}
