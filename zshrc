@@ -35,6 +35,7 @@ export EDITOR='vim'
 export PS1=">> "
 
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME:$PATH"
 export PATH="$PATH:/usr/local/bin"
 
 # The next line updates PATH for the Google Cloud SDK.

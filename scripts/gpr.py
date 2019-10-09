@@ -1,14 +1,16 @@
-#!/Users/andreaskater/Dev/python python3
+#!/Users/andreaskater/Dev/python/venv/bin/python
+import andi
+import subprocess
 import os
 import sys
-import subprocess
-import andi
+print(sys.executable)
+
 
 print('git push')
 os.system('git push')
 
 print('git pull-request -c')
-os.system('git pull-request -c')
+os.system('hub pull-request -c')
 
 remote = subprocess.check_output(
     'git config --get remote.origin.url'.split(' ')).decode('utf-8')

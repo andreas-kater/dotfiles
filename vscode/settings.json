@@ -21,7 +21,7 @@
         "pylint_flask"
     ],
     "python.pythonPath": "${workspaceFolder}/venv/bin/python",
-    "python.linting.pep8Args": [
+    "python.linting.pycodestyleArgs": [
         "--ignore=E501"
     ],
     "files.exclude": {
