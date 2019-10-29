@@ -22,6 +22,7 @@ alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 # alias zipp="node $SCRIPTS_PATH/zipp.js"
 alias zipp=$SCRIPTS_PATH/zipp.sh
 alias virtual=$SCRIPTS_PATH/virtual.sh
+alias pdf_merger='python /Users/andreaskater/Dev/dotfiles/scripts/pdf_merger.py'
 
 #Budler
 alias be='bundle exec'
