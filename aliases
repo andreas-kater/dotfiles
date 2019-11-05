@@ -13,11 +13,10 @@ alias testing='python $SCRIPTS_PATH/test.py'
 # General
 alias c=clear
 alias ls='ls -1a'
+alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
 
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
-alias clasp-create=~/Dev/clasp/my-macros/clasp-create.sh
-alias clasp-add=~/Dev/clasp/my-macros/clasp-add.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 # alias zipp="node $SCRIPTS_PATH/zipp.js"
 alias zipp=$SCRIPTS_PATH/zipp.sh

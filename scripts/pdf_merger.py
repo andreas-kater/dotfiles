@@ -3,12 +3,7 @@ from PyPDF2 import PdfFileWriter, PdfFileReader
 import os
 import sys
 
-print(sys.argv)
-
 cwd = os.getcwd()
-
-print(cwd)
-
 output_pdf_file = PdfFileWriter()
 output_file_path = os.path.join(cwd, 'merged.pdf')
 
@@ -20,3 +15,4 @@ for input_file in sorted(os.listdir(cwd)):
          for page_num in range(input_pdf_file.numPages)]
 
 output_pdf_file.write(open(output_file_path, "wb"))
+print('done')
