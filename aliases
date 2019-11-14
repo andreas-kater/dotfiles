@@ -11,7 +11,9 @@ alias jp='jupyter notebook'
 alias testing='python $SCRIPTS_PATH/test.py'
 
 # General
+alias x=clear
 alias c=clear
+alias copy=pbcopy
 alias ls='ls -1a'
 alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
 
