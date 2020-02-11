@@ -214,31 +214,6 @@
         "command": "-workbench.action.output.toggleOutput"
     },
     {
-        "key": "alt+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+k",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+down",
-        "command": "-markdown.extension.onMoveLineDown",
-        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+down",
-        "command": "-markdown.extension.onMoveLineDown",
-        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
         "key": "cmd+k",
         "command": "-workbench.action.terminal.clear",
         "when": "terminalFocus"
