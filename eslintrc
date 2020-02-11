@@ -1,15 +1,17 @@
 {
-    "parser": "esprima-fb",
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
     "env": {
         "browser": true,
-        "node": true
+        "node": true,
+        "es6": true
     },
-
     "rules": {
         "no-mixed-requires": [0, false],
-        "quotes": [2, "single"],
+        "quotes": [2, "backtick"],
         "strict": [1, "never"],
-        "semi": [2, "always"],
+        "semi": [2, "never"],
         "curly": 1,
         "no-bitwise": 1,
         "max-len": [1, 110, 4],
@@ -28,20 +30,20 @@
         "react/prop-types": 2,
         "react/react-in-jsx-scope": 1,
         "react/self-closing-comp": 1,
-        "react/wrap-multilines": 0
+        "react/wrap-multilines": 0,
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "function", "next": "function" },
+        ]
     },
-
     "ecmaFeatures": {
         "jsx": true
     },
-
     "plugins": [ "react" ],
-
     "globals": {
-        "d3": true,
+        "d3": "true",
         "require": "true",
         "module": "true",
         "$": "true",
-        "d3": "true"
     }
 }

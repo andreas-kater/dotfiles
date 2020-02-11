@@ -9,6 +9,9 @@
     "html.format.maxPreserveNewLines": 9,
     "html.format.wrapAttributes": "auto",
     "brace_style": "collapse,preserve-inline",
+    // "eslint.options": {
+    //     "configFile": "/Users/andreaskater/Dev/dotfiles/eslintrc"
+    // },
     "html.format.indentHandlebars": true,
     "python.sortImports.args": [
         "--check-only"
@@ -41,6 +44,9 @@
         "**/__pycache__": true
     },
     "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.colorTheme": "Material Theme Ocean",
@@ -106,5 +112,11 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "ruby.intellisense": "rubyLocate"
+    "ruby.intellisense": "rubyLocate",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "references.preferredLocation": "view"
 }

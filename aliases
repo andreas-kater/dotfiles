@@ -16,6 +16,7 @@ alias c=clear
 alias copy=pbcopy
 alias ls='ls -1a'
 alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
+alias mth='/Users/andreaskater/Dev/dotfiles/scripts/mth.py'
 
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
@@ -68,6 +69,7 @@ alias hsc=$SCRIPTS_PATH/heroku_sync_config.sh
 
 #NGROK
 alias ngk='~/code/src/ngrok http'
+alias ngroker='python /Users/andreaskater/Dev/dotfiles/scripts/ngroker.py'
 
 #PARITY
 alias drp='development restore production'
@@ -90,7 +92,7 @@ alias rspc='rspec spec'
 alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
 
 #Tree
-alias t='tree'
+alias t=tree
 alias tree="tree -I 'node_modules|venv'"
 
 #VIM

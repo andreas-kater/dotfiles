@@ -1,9 +1,7 @@
 'use strict'
 
 const fs = require('fs')
-const {
-    execSync
-} = require('child_process')
+const { execSync } = require('child_process')
 let [target, password] = process.argv.slice(2)
 let foldername
 if (fs.lstatSync(target).isFile()) {

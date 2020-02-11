@@ -13,3 +13,5 @@ original_filename = os.path.split(latest_file)[1]
 new_filename = input('Enter new filename: ') or original_filename
 destination = os.path.join(secrets_folder, new_filename)
 shutil.move(latest_file, destination)
+
+os.system("echo '%s' | pbcopy" % new_filename)

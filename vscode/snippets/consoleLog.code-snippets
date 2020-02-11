@@ -32,9 +32,64 @@
 			""
 		],
 	},
+	"arrow_function": {
+		"scope": "javascript,typescript",
+		"prefix": "af",
+		"body": [
+			"($1)=>{$0}",
+		],
+	},
+	"anonymous_function": {
+		"scope": "javascript,typescript",
+		"prefix": "fn",
+		"body": [
+			"function ($1) {$0}",
+		],
+	},
+	"if": {
+		"scope": "javascript,typescript",
+		"prefix": "if",
+		"body": [
+			"if ($1) {$0}",
+		],
+	},
+	"for": {
+		"scope": "javascript,typescript",
+		"prefix": "for",
+		"body": [
+			"for ($1) {$0}",
+		],
+	},
+	"while": {
+		"scope": "javascript,typescript",
+		"prefix": "while",
+		"body": [
+			"while ($1) {$0}",
+		],
+	},
+	"test": {
+		"scope": "javascript,typescript",
+		"prefix": "test",
+		"body": [
+			"test('$1',()=>{$0})",
+		],
+	},
+	"try --> catch": {
+		"scope": "javascript,typescript",
+		"prefix": "try",
+		"body": [
+			"try {",
+			"	$1",
+			"} catch (err) {console.log(err) }",
+			"$0",
+		],
+	},
 	"require": {
 		"scope": "javascript,typescript",
-		"prefix": "re",
+		"prefix": [
+			"re",
+			"req"
+		],
 		"body": [
 			"const $1 = require('$1')",
 		],
@@ -44,7 +99,7 @@
 		"prefix": "fs",
 		"body": [
 			"const fs = require('fs')",
-			"$2"
+			"$0"
 		],
 	},
 	"if main": {
@@ -80,6 +135,14 @@
 			"    "
 		],
 		"description": "def __init__(self):"
+	},
+	"print": {
+		"scope": "python",
+		"prefix": "p",
+		"body": [
+			"print($0)"
+		],
+		"description": "print()"
 	},
 	"pprint": {
 		"scope": "python",

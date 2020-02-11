@@ -9,8 +9,8 @@ print(sys.executable)
 print('git push')
 os.system('git push')
 
-print('git pull-request -c')
-os.system('hub pull-request -c')
+print('git pull-request')
+os.system('hub pull-request')
 
 remote = subprocess.check_output(
     'git config --get remote.origin.url'.split(' ')).decode('utf-8')
