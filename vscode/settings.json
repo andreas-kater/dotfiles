@@ -1,122 +1,125 @@
 {
-    "terminal.integrated.shell.osx": "zsh",
-    "window.zoomLevel": 0,
-    "explorer.confirmDelete": false,
-    "explorer.sortOrder": "mixed",
-    "terminal.integrated.rendererType": "dom",
-    "explorer.confirmDragAndDrop": false,
-    "html.format.indentInnerHtml": true,
-    "html.format.maxPreserveNewLines": 9,
-    "html.format.wrapAttributes": "auto",
-    "brace_style": "collapse,preserve-inline",
-    // "eslint.options": {
-    //     "configFile": "/Users/andreaskater/Dev/dotfiles/eslintrc"
-    // },
-    "html.format.indentHandlebars": true,
-    "python.sortImports.args": [
-        "--check-only"
-    ],
-    "pyhthon.formatting.autopep8Args": [
-        "--ignore",
-        "E1101",
-        "C0111",
-        "E402",
-        "E301",
-        "E501",
-        "E266"
-    ],
-    "python.linting.pylintArgs": [
-        "--disable=E1101,C0111,E402,E301,E501,E266",
-        // "--errors-only",
-        "--load-plugins"
-        // "pylint_flask"
-    ],
-    "python.linting.flake8Args": [
-        "--ignore=E1101,C0111,E402,E301,E501,E266",
-        "--verbose"
-    ],
-    "python.pythonPath": "${workspaceFolder}/venv/bin/python",
-    "python.linting.pycodestyleArgs": [
-        "--ignore=E1101,C0111,E402,E301,E501,E266"
-    ],
-    "files.exclude": {
-        "**/*.pyc": true,
-        "**/__pycache__": true
+  "terminal.integrated.shell.osx": "zsh",
+  "window.zoomLevel": 2,
+  "explorer.confirmDelete": false,
+  "explorer.sortOrder": "mixed",
+  "terminal.integrated.rendererType": "dom",
+  "explorer.confirmDragAndDrop": false,
+  "html.format.indentInnerHtml": true,
+  "html.format.maxPreserveNewLines": 9,
+  "html.format.wrapAttributes": "auto",
+  "brace_style": "collapse,preserve-inline",
+  "eslint.options": {
+    "configFile": "/Users/andreaskater/Dev/dotfiles/eslintrc"
+  },
+  "eslint.autoFixOnSave": true,
+  "html.format.indentHandlebars": true,
+  "python.sortImports.args": [
+    "--check-only"
+  ],
+  "pyhthon.formatting.autopep8Args": [
+    "--ignore",
+    "E1101",
+    "C0111",
+    "E402",
+    "E301",
+    "E501",
+    "E266"
+  ],
+  "python.linting.pylintArgs": [
+    "--disable=E1101,C0111,E402,E301,E501,E266",
+    // "--errors-only",
+    "--load-plugins"
+    // "pylint_flask"
+  ],
+  "python.linting.flake8Args": [
+    "--ignore=E1101,C0111,E402,E301,E501,E266",
+    "--verbose"
+  ],
+  "python.pythonPath": "${workspaceFolder}/venv/bin/python",
+  "python.linting.pycodestyleArgs": [
+    "--ignore=E1101,C0111,E402,E301,E501,E266"
+  ],
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/__pycache__": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Material Theme Ocean",
+  "vim.leader": ",",
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "Tab"
+      ],
+      "after": [
+        ">"
+      ]
     },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "Material Theme Ocean",
-    "vim.leader": ",",
-    "vim.useSystemClipboard": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "k",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "Tab"
-            ],
-            "after": [
-                ">"
-            ]
-        },
-        {
-            "before": [
-                "S-Tab"
-            ],
-            "after": [
-                "<"
-            ]
-        },
-        {
-            "before": [
-                ",",
-                "s"
-            ],
-            "commands": [
-                ":sort"
-            ]
-        }
-    ],
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    {
+      "before": [
+        "S-Tab"
+      ],
+      "after": [
+        "<"
+      ]
     },
-    "breadcrumbs.enabled": false,
-    "editor.gotoLocation.multiple": "goto",
-    "python.jediEnabled": true,
-    "vscodeGoogleTranslate.preferredLanguage": "fr",
-    "editor.minimap.enabled": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "ruby.intellisense": "rubyLocate",
-    "editor.gotoLocation.multipleDeclarations": "goto",
-    "editor.gotoLocation.multipleDefinitions": "goto",
-    "editor.gotoLocation.multipleImplementations": "goto",
-    "editor.gotoLocation.multipleReferences": "goto",
-    "editor.gotoLocation.multipleTypeDefinitions": "goto",
-    "references.preferredLocation": "view"
+    {
+      "before": [
+        ",",
+        "s"
+      ],
+      "commands": [
+        ":sort"
+      ]
+    }
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.gotoLocation.multiple": "goto",
+  "python.jediEnabled": true,
+  "vscodeGoogleTranslate.preferredLanguage": "fr",
+  "editor.minimap.enabled": true,
+  "[javascript]": {
+    "eslint.autoFixOnSave": false,
+    // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 4
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "ruby.intellisense": "rubyLocate",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "references.preferredLocation": "view",
+  "eslint.codeAction.showDocumentation": {}
 }

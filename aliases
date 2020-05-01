@@ -26,11 +26,15 @@ alias zipp=$SCRIPTS_PATH/zipp.sh
 alias virtual=$SCRIPTS_PATH/virtual.sh
 alias pdf_merger='python /Users/andreaskater/Dev/dotfiles/scripts/pdf_merger.py'
 
-#Budler
+# Budler
 alias be='bundle exec'
 
 #Directories
 alias home='cd ~/'
+
+# Node
+alias ccc='node /Users/andreaskater/Dev/ccc/ccc.js'
+alias aaa='node /Users/andreaskater/Dev/ccc/aaa.js'
 
 #GIT
 alias gap='git add --patch'
