@@ -1,6 +1,6 @@
 {
   "terminal.integrated.shell.osx": "zsh",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
   "explorer.confirmDelete": false,
   "explorer.sortOrder": "mixed",
   "terminal.integrated.rendererType": "dom",
