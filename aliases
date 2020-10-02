@@ -1,5 +1,7 @@
 SCRIPTS_PATH='/Users/andreaskater/Dev/dotfiles/scripts'
 
+alias ink='node index.js'
+
 alias dvelp='~/code/underlay/bin/dvelp'
 alias d='~/code/underlay/bin/dvelp'
 alias '$'=''
@@ -13,6 +15,7 @@ alias testing='python $SCRIPTS_PATH/test.py'
 # General
 alias x=clear
 alias c=clear
+alias cc=clear
 alias copy=pbcopy
 alias ls='ls -1a'
 alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
@@ -24,10 +27,8 @@ alias pss=$SCRIPTS_PATH/paste-screenshot.sh
 # alias zipp="node $SCRIPTS_PATH/zipp.js"
 alias zipp=$SCRIPTS_PATH/zipp.sh
 alias virtual=$SCRIPTS_PATH/virtual.sh
+#alias ery-api='node /Users/andreaskater/Dev/ery-api/cli/bin/ery-api'
 alias pdf_merger='python /Users/andreaskater/Dev/dotfiles/scripts/pdf_merger.py'
-
-# Budler
-alias be='bundle exec'
 
 #Directories
 alias home='cd ~/'
@@ -62,35 +63,9 @@ alias gsf='git show --pretty="" --name-only'
 alias gu=$SCRIPTS_PATH/git_update.sh
 alias unstage='reset'
 
-#Heroku
-alias hc='staging console'
-alias hcp='production console'
-alias hm='staging migrate'
-alias hmp='production migrate'
-alias hlg='staging tail'
-alias hlgp='production tail'
-alias hsc=$SCRIPTS_PATH/heroku_sync_config.sh
-
 #NGROK
 alias ngk='~/code/src/ngrok http'
 alias ngroker='python /Users/andreaskater/Dev/dotfiles/scripts/ngroker.py'
-
-#PARITY
-alias drp='development restore production'
-alias drs='development restore staging'
-
-#Rails
-alias rc='rails c'
-alias rg='rails g'
-
-#Rails-rake
-alias rk='rake'
-alias rkm='rake db:migrate'
-alias rkr='rake db:rollback'
-alias rks='rake db:setup'
-
-#Rails-rspec
-alias rspc='rspec spec'
 
 #TMUX
 alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
@@ -100,7 +75,7 @@ alias t=tree
 alias tree="tree -I 'node_modules|venv'"
 
 #VIM
-alias v='vim'
+alias v=vim
 
 #ZSH
 alias relaod=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"

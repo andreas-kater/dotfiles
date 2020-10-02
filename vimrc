@@ -7,6 +7,7 @@ let g:vimsyn_embed=0
 "autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 imap jk <Esc>
 imap kj <Esc>
+imap <space><space> <Esc>
 
 " trying to stop vim from slowing down when it's been open for a while
 " copying visually selected code into clipboard:

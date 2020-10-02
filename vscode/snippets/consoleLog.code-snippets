@@ -15,6 +15,24 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"react": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "comp",
+		"body": [
+			"import React from \"react\"",
+			"",
+			"const $1 = () => {",
+			"    return (",
+			"        <React.Fragment>",
+			"            $2",
+			"        </React.Fragment>",
+			"    )",
+			"}",
+			"",
+			"export default $1",
+		],
+		"description": "React component template"
+	},
 	"console log": {
 		"scope": "javascript,typescript,javascriptreact,typescriptreact",
 		"prefix": "l",

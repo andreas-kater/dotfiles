@@ -1,0 +1,22 @@
+{
+    "extends": [
+        "plugin:react/recommended",
+        "react-app"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "settings":{
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "react/jsx-indent": [2, 4],
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-closing-bracket-location": [2, "tag-aligned"],
+        "react/jsx-first-prop-new-line": [2, "multiline"],
+        "react/jsx-max-props-per-line": [2, { "maximum": 1, "when": "multiline" }],
+        "react/prop-types": [0]
+    }
+}
