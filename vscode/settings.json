@@ -28,8 +28,14 @@
   "eslint.format.enable": true,
   "files.exclude": {
     "**/*.pyc": true,
-    "**/__pycache__": true,
-    "**/build": true
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/build": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",

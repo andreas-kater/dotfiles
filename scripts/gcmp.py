@@ -4,11 +4,11 @@ import sys
 
 cwd = os.getcwd()
 
-os.system(f'cd {cwd} && python -m unittest discover')
+# os.system(f'cd {cwd} && python -m unittest discover')
 
-filepath = os.path.join(cwd, 'requirements.py')
-if os.path.isfile(filepath):
-    os.system(f'cd {cwd} && python requirements.py')
+# filepath = os.path.join(cwd, 'requirements.py')
+# if os.path.isfile(filepath):
+#     os.system(f'cd {cwd} && python requirements.py')
 
 os.system('git add .')
 os.system(f'git commit -m "{sys.argv[1]}"')

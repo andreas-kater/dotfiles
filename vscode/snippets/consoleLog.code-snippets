@@ -57,6 +57,20 @@
 			"($1)=>{$0}",
 		],
 	},
+	"styled div": {
+		"scope": "javascript,typescript",
+		"prefix": "sd",
+		"body": [
+			"<div",
+			"    style={{",
+			"        display:'flex',",
+			"        $1,",
+			"    }}",
+			">",
+			"    $2",
+			"</div>",
+		],
+	},
 	"anonymous_function": {
 		"scope": "javascript,typescript",
 		"prefix": "fn",

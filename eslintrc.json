@@ -21,10 +21,11 @@
     },
     "rules": {
         "array-bracket-spacing": [2, "never"],
+        "arrow-parens": ["error", "as-needed"],
         "arrow-spacing": "error",
         "comma-spacing": ["error", { "before": false, "after": false }],
+        "comma-dangle": ["error", "always-multiline"],
         "computed-property-spacing": ["error", "never"],
-        "curly": 0,
         "guard-for-in": 1,
         "indent": ["error", 4, { "SwitchCase": 1, "VariableDeclarator": 1 }],
         "key-spacing": ["error", { "beforeColon": false }],
@@ -36,12 +37,15 @@
         "no-undef": [0], 
         "no-unused-vars": [0],
         "object-curly-spacing": ["error", "always"],
+        "object-shorthand": ["error", "always"],
         "quotes": [2, "backtick"],
         "semi": [2, "never"],
         "space-before-function-paren": ["error", "never"],
         "space-in-parens": ["error", "never"],
         "space-infix-ops": ["error"],
         "vars-on-top": 0,
+        "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
+        "prefer-destructuring": ["error"],
         "padding-line-between-statements": [
             "error",
             { "blankLine": "always", "prev": "function", "next": "function" }
