@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Get your machine purring with this selection of dotfiles.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "change-case": "^4.1.1"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",

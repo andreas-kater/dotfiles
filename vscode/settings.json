@@ -1,6 +1,6 @@
 {
   "terminal.integrated.shell.osx": "zsh",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "explorer.confirmDelete": false,
   "explorer.sortOrder": "mixed",
   "explorer.confirmDragAndDrop": false,
@@ -130,5 +130,11 @@
   "python.linting.pycodestyleArgs": [
     "--ignore=E1101,C0111,E402,E301,E501,E266"
   ],
-  "eslint.lintTask.enable": true
+  "eslint.lintTask.enable": true,
+  "editor.renameOnType": true,
+  "beautify.language": {
+    "html": ["html", "php", "erb"],
+    "css": ["scss","css"],
+    "js": []
+  }
 }

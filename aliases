@@ -36,6 +36,7 @@ alias home='cd ~/'
 # Node
 alias ccc='node /Users/andreaskater/Dev/ccc/ccc.js'
 alias aaa='node /Users/andreaskater/Dev/ccc/aaa.js'
+alias comp='node /Users/andreaskater/Dev/dotfiles/scripts/createComponent.js'
 
 #GIT
 alias gap='git add --patch'
