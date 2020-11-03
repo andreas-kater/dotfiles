@@ -1,6 +1,6 @@
 {
   "terminal.integrated.shell.osx": "zsh",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "explorer.confirmDelete": false,
   "explorer.sortOrder": "mixed",
   "explorer.confirmDragAndDrop": false,

@@ -1,11 +1,15 @@
 SCRIPTS_PATH='/Users/andreaskater/Dev/dotfiles/scripts'
 
-alias ink='node index.js'
-
-alias dvelp='~/code/underlay/bin/dvelp'
-alias d='~/code/underlay/bin/dvelp'
 alias '$'=''
 
+# Node
+alias nm=nodemon
+alias ccc='node /Users/andreaskater/Dev/ccc/ccc.js'
+alias aaa='node /Users/andreaskater/Dev/ccc/aaa.js'
+alias comp='node /Users/andreaskater/Dev/dotfiles/scripts/createComponent.js'
+
+
+# Python
 alias python=python3
 alias add_scripts='/Users/andreaskater/Dev/python/services/GoogleScripts/add_scripts.py'
 # alias pip=/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
@@ -21,6 +25,10 @@ alias ls='ls -1a'
 alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
 alias mth='/Users/andreaskater/Dev/dotfiles/scripts/mth.py'
 
+# Firebase
+alias deploy='/Users/andreaskater/Dev/dotfiles/scripts/deploy.js'
+alias emul='firebase emulators:start --import=emulator-backup --export-on-exit=emulator-backup'
+
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
@@ -32,11 +40,6 @@ alias pdf_merger='python /Users/andreaskater/Dev/dotfiles/scripts/pdf_merger.py'
 
 #Directories
 alias home='cd ~/'
-
-# Node
-alias ccc='node /Users/andreaskater/Dev/ccc/ccc.js'
-alias aaa='node /Users/andreaskater/Dev/ccc/aaa.js'
-alias comp='node /Users/andreaskater/Dev/dotfiles/scripts/createComponent.js'
 
 #GIT
 alias gap='git add --patch'
