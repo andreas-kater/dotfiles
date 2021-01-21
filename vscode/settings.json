@@ -1,6 +1,6 @@
 {
   "terminal.integrated.shell.osx": "zsh",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 2,
   "explorer.confirmDelete": false,
   "explorer.sortOrder": "mixed",
   "explorer.confirmDragAndDrop": false,
@@ -10,7 +10,6 @@
   "html.format.wrapAttributes": "auto",
   "html.format.indentHandlebars": true,
   "brace_style": "collapse,preserve-inline",
-  "editor.gotoLocation.multiple": "goto",
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
@@ -19,11 +18,10 @@
   "editor.suggestSelection": "first",
   "editor.minimap.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
   },
-  // "eslint.options": {
-  //   "configFile": "/Users/andreaskater/.eslintrc"
-  // },
   "eslint.codeAction.showDocumentation": {},
   "eslint.format.enable": true,
   "files.exclude": {
@@ -37,6 +35,7 @@
     "**/package-lock.json": true,
     "**/yarn.lock": true
   },
+  "search.useIgnoreFiles": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "vim.leader": ",",
@@ -93,10 +92,10 @@
   },
   "breadcrumbs.enabled": false,
   "vscodeGoogleTranslate.preferredLanguage": "fr",
-  "[javascript]": {
-    // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.tabSize": 4
-  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  //   "editor.tabSize": 2
+  // },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "ruby.intellisense": "rubyLocate",
   "references.preferredLocation": "view",
@@ -132,9 +131,8 @@
   ],
   "eslint.lintTask.enable": true,
   "editor.renameOnType": true,
-  "beautify.language": {
-    "html": ["html", "php", "erb"],
-    "css": ["scss","css"],
-    "js": []
-  }
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "eslint.debug": true,
+  "eslint.lintTask.options": ""
 }

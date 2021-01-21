@@ -11,6 +11,6 @@ cwd = os.getcwd()
 #     os.system(f'cd {cwd} && python requirements.py')
 
 os.system('git add .')
-os.system(f'git commit -m "{sys.argv[1]}"')
-os.system(f'git push')
+os.system(f'git commit --amend --no-edit')
+os.system(f'git push -f')
 os.system(f'git --no-pager log --oneline --decorate --graph --all -n 12')

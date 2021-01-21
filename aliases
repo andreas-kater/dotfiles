@@ -27,7 +27,8 @@ alias mth='/Users/andreaskater/Dev/dotfiles/scripts/mth.py'
 
 # Firebase
 alias deploy='/Users/andreaskater/Dev/dotfiles/scripts/deploy.js'
-alias emul='firebase emulators:start --import=emulator-backup --export-on-exit=emulator-backup'
+alias emul='firebase emulators:start --import=firestore_import --export-on-exit=firestore_import'
+alias emulocal='firebase emulators:start --import=emulator-backup --export-on-exit=emulator-backup'
 
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
@@ -48,8 +49,11 @@ alias gbo=$SCRIPTS_PATH/git_branch_out.sh
 alias gc='git checkout'
 alias gcm='git add --all && git commit -m'
 alias gcmp='python /Users/andreaskater/Dev/dotfiles/scripts/gcmp.py'
+alias gcap='python /Users/andreaskater/Dev/dotfiles/scripts/gcap.py'
 alias gcp='git cherry-pick'
 alias gd='git diff origin/master'
+alias grc='git rebase --continue'
+alias gdh='git diff HEAD'
 alias gdb='git checkout master && git checkout master && git branch -D'
 alias gdrb='git push --delete'
 alias gfp=$SCRIPTS_PATH/git_fix_push.sh
