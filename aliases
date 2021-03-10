@@ -1,13 +1,14 @@
 SCRIPTS_PATH='/Users/andreaskater/Dev/dotfiles/scripts'
 
 alias '$'=''
+alias '..'='cd ..'
 
 # Node
 alias nm=nodemon
 alias ccc='node /Users/andreaskater/Dev/ccc/ccc.js'
 alias aaa='node /Users/andreaskater/Dev/ccc/aaa.js'
 alias comp='node /Users/andreaskater/Dev/dotfiles/scripts/createComponent.js'
-
+alias ngroker='node /Users/andreaskater/Dev/wakeflow/ngroker.js'
 
 # Python
 alias python=python3
@@ -25,11 +26,20 @@ alias ls='ls -1a'
 alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
 alias mth='/Users/andreaskater/Dev/dotfiles/scripts/mth.py'
 
+# Wakeflow
+alias rtlf="node /Users/andreaskater/Dev/wakeflow/transfers/cli/rtlf.js"
+alias rtla="node /Users/andreaskater/Dev/wakeflow/transfers/cli/rtla.js"
+alias ltrf="node /Users/andreaskater/Dev/wakeflow/transfers/cli/ltrf.js"
+alias ltra="node /Users/andreaskater/Dev/wakeflow/transfers/cli/ltra.js"
+
 # Firebase
 alias deploy='/Users/andreaskater/Dev/dotfiles/scripts/deploy.js'
 alias emul='firebase emulators:start --import=firestore_import --export-on-exit=firestore_import'
+alias emulf='firebase emulators:start --only functions'
 alias emulocal='firebase emulators:start --import=emulator-backup --export-on-exit=emulator-backup'
 
+# Feathersjs
+alias fgs='feathers generate service'
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
@@ -50,9 +60,10 @@ alias gc='git checkout'
 alias gcm='git add --all && git commit -m'
 alias gcmp='python /Users/andreaskater/Dev/dotfiles/scripts/gcmp.py'
 alias gcap='python /Users/andreaskater/Dev/dotfiles/scripts/gcap.py'
+alias gca='git commit --amend'
 alias gcp='git cherry-pick'
 alias gd='git diff origin/master'
-alias grc='git rebase --continue'
+alias grc='git add . && git rebase --continue'
 alias gdh='git diff HEAD'
 alias gdb='git checkout master && git checkout master && git branch -D'
 alias gdrb='git push --delete'
@@ -70,10 +81,6 @@ alias gs='git status'
 alias gsf='git show --pretty="" --name-only'
 alias gu=$SCRIPTS_PATH/git_update.sh
 alias unstage='reset'
-
-#NGROK
-alias ngk='~/code/src/ngrok http'
-alias ngroker='python /Users/andreaskater/Dev/dotfiles/scripts/ngroker.py'
 
 #TMUX
 alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh

@@ -22,11 +22,11 @@
       "import React from \"react\"",
       "",
       "const $1 = () => {",
-      "    return (",
-      "        <React.Fragment>",
-      "            $2",
-      "        </React.Fragment>",
-      "    )",
+      "  return (",
+      "    <React.Fragment>",
+      "      $2",
+      "    </React.Fragment>",
+      "  )",
       "}",
       "",
       "export default $1",
@@ -90,6 +90,13 @@
     "prefix": "dis",
     "body": [
       "const dispatch = useDispatch()",
+    ],
+  },
+  "useHistory": {
+    "scope": "javascript,typescript",
+    "prefix": "his",
+    "body": [
+      "const history = useHistory()",
     ],
   },
   "styled div": {

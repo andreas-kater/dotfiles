@@ -15,11 +15,11 @@ export PYTHONPATH="${PYTHONPATH}:/Users/andreaskater/Dev/python"
 # export PYTHONSTARTUP="/Users/andreaskater/Dev/dotfiles/pythonstartup.py"
 
 #tmux
-if [[ ! $TERM =~ screen ]]; then
-  if [ $TERM_PROGRAM = "iTerm.app" ]; then
-#    exec tmux
-  fi
-fi
+# if [[ ! $TERM =~ screen ]]; then
+#   if [ $TERM_PROGRAM = "iTerm.app" ]; then
+# #    exec tmux
+#   fi
+# fi
 
 #NVM node version manager
 export NVM_DIR="$HOME/.nvm"
