@@ -13,8 +13,8 @@ const filename = camelCase(process.argv[2]) + `.js`
 const componentName = pascalCase(process.argv[2])
 const filepath = path.join(componentsDir,filename)
 const contents = 
-`import React from "react"
-import styled from "styled-components"
+`import React from 'react'
+import styled from 'styled-components'
 
 const ${componentName} = () => {
   return (

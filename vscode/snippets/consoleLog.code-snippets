@@ -20,16 +20,21 @@
     "prefix": "comp",
     "body": [
       "import React from \"react\"",
+      "import styled from 'styled-components';",
       "",
       "const $1 = () => {",
       "  return (",
-      "    <React.Fragment>",
+      "    <Container>",
       "      $2",
-      "    </React.Fragment>",
+      "    </Container>",
       "  )",
       "}",
       "",
       "export default $1",
+      "",
+      "const Container = styled.div`",
+      "  display:flex;",
+      "`"
     ],
     "description": "React component template"
   },

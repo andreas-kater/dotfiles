@@ -22,6 +22,7 @@
     "source.organizeImports": false
   },
   "eslint.codeAction.showDocumentation": {},
+  "eslint.validate": ["typescript", "typescriptreact"],
   "eslint.format.enable": true,
   "files.exclude": {
     "**/*.pyc": true,
@@ -133,5 +134,12 @@
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
   "eslint.debug": true,
-  "eslint.lintTask.options": ""
+  "eslint.lintTask.options": "",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "window.zoomLevel": -1
 }

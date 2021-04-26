@@ -1,7 +1,8 @@
 # SETUP
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-plugins=(asdf git)
+# plugins=(asdf git)
+plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # aliases
@@ -44,4 +45,4 @@ if [ -f '/Users/andreaskater/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/an
 if [ -f '/Users/andreaskater/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andreaskater/google-cloud-sdk/completion.zsh.inc'; fi
 
 # twilio autocomplete setup
-TWILIO_AC_ZSH_SETUP_PATH=/Users/andreaskater/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+# TWILIO_AC_ZSH_SETUP_PATH=/Users/andreaskater/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
