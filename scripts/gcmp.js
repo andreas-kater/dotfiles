@@ -54,9 +54,10 @@ const gcmp = async ()=>{
     // const gh_list = `-  /Users/andreaskater/Dev/dotfiles/scripts/gcmp.js   Run CI/CD workflow  master  push  785089471`
     const regex = /([0-9]{9})/g
     const match = regex.exec(gh_list)
-    const run_id = match[1] 
-    await run(`gh run watch ${run_id} -i3`)
-
+    if(match){
+      const run_id = match[1] 
+      await run(`gh run watch ${run_id} -i3`)
+    }
     await run(`terminal-notifier -title 'Github' -message 'Done deploying'`)
     await run(`say 'done deploying'`)
   }catch(err){
