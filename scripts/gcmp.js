@@ -50,16 +50,17 @@ const gcmp = async ()=>{
     await new Promise(resolve=>setTimeout(()=>resolve(),3000))
 
     const gh_list = await run('gh run list -L1')
-    console.log(gh_list)
-    // const gh_list = `-  /Users/andreaskater/Dev/dotfiles/scripts/gcmp.js   Run CI/CD workflow  master  push  785089471`
-    const regex = /([0-9]{9})/g
-    const match = regex.exec(gh_list)
-    if(match){
-      const run_id = match[1] 
-      await run(`gh run watch ${run_id} -i3`)
+    if(gh_list){
+      console.log(gh_list)
+      const regex = /([0-9]{9})/g
+      const match = regex.exec(gh_list)
+      if(match){
+        const run_id = match[1] 
+        await run(`gh run watch ${run_id} -i3`)
+      }
     }
     await run(`terminal-notifier -title 'Github' -message 'Done deploying'`)
-    await run(`say 'done deploying'`)
+    // await run(`say 'done deploying'`)
   }catch(err){
     await run('say "deploy failed"')
     console.log(err)
