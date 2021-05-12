@@ -59,6 +59,7 @@ alias gbo=$SCRIPTS_PATH/git_branch_out.sh
 alias gc='git checkout'
 alias gcm='git add --all && git commit -m'
 alias gcmp='node /Users/andreaskater/Dev/dotfiles/scripts/gcmp.js'
+alias gcmpw='node /Users/andreaskater/Dev/dotfiles/scripts/gcmpw.js'
 alias gcap='python3 /Users/andreaskater/Dev/dotfiles/scripts/gcap.py'
 alias gca='git commit --amend'
 alias gcp='git cherry-pick'
