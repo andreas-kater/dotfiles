@@ -46,6 +46,24 @@
     ],
     "description": "React useState template"
   },
+  "onClick": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "oc",
+    "body": [
+      "onClick={handleClick}",
+    ],
+    "description": "onClick"
+  },
+  "handleClick": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "hc",
+    "body": [
+      "const handleClick = async()=>{",
+      "  $1",
+      "}"
+    ],
+    "description": "handleClick"
+  },
   "console log": {
     "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "prefix": "l",
