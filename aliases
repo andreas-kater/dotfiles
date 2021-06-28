@@ -7,15 +7,7 @@ alias '..'='cd ..'
 alias nm=nodemon
 alias ccc='node /Users/andreaskater/Dev/ccc/ccc.js'
 alias aaa='node /Users/andreaskater/Dev/ccc/aaa.js'
-alias comp='node /Users/andreaskater/Dev/dotfiles/scripts/createComponent.js'
-alias ngroker='node /Users/andreaskater/Dev/wakeflow/ngroker.js'
-
-# Python
-# alias python=python3
-alias add_scripts='/Users/andreaskater/Dev/python/services/GoogleScripts/add_scripts.py'
-# alias pip=/Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
-alias jp='jupyter notebook'
-alias testing='python $SCRIPTS_PATH/test.py'
+alias comp='$SCRIPTS_PATH/createComponent.js'
 
 # General
 alias x=clear
@@ -23,8 +15,6 @@ alias c=clear
 alias cc=clear
 alias copy=pbcopy
 alias ls='ls -1a'
-alias mts='/Users/andreaskater/Dev/dotfiles/scripts/mts.py'
-alias mth='/Users/andreaskater/Dev/dotfiles/scripts/mth.py'
 
 # Wakeflow
 alias rtlf="node /Users/andreaskater/Dev/wakeflow/transfers/cli/rtlf.js"
@@ -33,58 +23,41 @@ alias ltrf="node /Users/andreaskater/Dev/wakeflow/transfers/cli/ltrf.js"
 alias ltra="node /Users/andreaskater/Dev/wakeflow/transfers/cli/ltra.js"
 
 # Firebase
-alias deploy='/Users/andreaskater/Dev/dotfiles/scripts/deploy.js'
 alias emul='firebase emulators:start --import=firestore_import --export-on-exit=firestore_import'
 alias emulf='firebase emulators:start --only functions'
 alias emulocal='firebase emulators:start --import=emulator-backup --export-on-exit=emulator-backup'
 
 # Feathersjs
 alias fgs='feathers generate service'
+
 # Scripts
 alias mc=$SCRIPTS_PATH/mc.sh
 alias pss=$SCRIPTS_PATH/paste-screenshot.sh
-# alias zipp="node $SCRIPTS_PATH/zipp.js"
-alias zipp=$SCRIPTS_PATH/zipp.sh
-alias virtual=$SCRIPTS_PATH/virtual.sh
-#alias ery-api='node /Users/andreaskater/Dev/ery-api/cli/bin/ery-api'
-alias pdf_merger='python /Users/andreaskater/Dev/dotfiles/scripts/pdf_merger.py'
-
-#Directories
-alias home='cd ~/'
 
 #GIT
-alias gap='git add --patch'
 alias gb='git --no-pager branch'
 alias gbo=$SCRIPTS_PATH/git_branch_out.sh
 alias gc='git checkout'
+alias gcap='$SCRIPTS_PATH/scripts/gcap.py'
+alias gcb='git checkout -b'
 alias gcm='git add --all && git commit -m'
-alias gcmp='node /Users/andreaskater/Dev/dotfiles/scripts/gcmp.js'
-alias gcmpw='node /Users/andreaskater/Dev/dotfiles/scripts/gcmpw.js'
-alias gca='python3 /Users/andreaskater/Dev/dotfiles/scripts/gca.py'
-alias gcap='python3 /Users/andreaskater/Dev/dotfiles/scripts/gcap.py'
+alias gcmp='$SCRIPTS_PATH/gcmp.js'
+alias gcmpw='$SCRIPTS_PATH/gcmpw.js'
 alias gcp='git cherry-pick'
 alias gd='git diff origin/master'
-alias grc='git add . && git rebase --continue'
+alias gdb='git checkout master && git branch -D'
 alias gdh='git diff HEAD'
-alias gdb='git checkout master && git checkout master && git branch -D'
 alias gdrb='git push --delete'
 alias gfp=$SCRIPTS_PATH/git_fix_push.sh
 alias git=hub
 alias gl=$SCRIPTS_PATH/gl.sh
-alias glcw='git log -E -i --grep'
 alias gmp=$SCRIPTS_PATH/git_merge_pull_request.sh
-alias gpp='production deploy'
-alias gpr='/Users/andreaskater/Dev/dotfiles/scripts/gpr.py'
-alias gprb='git checkout --track'
-alias gps='staging deploy'
+alias gpr=$SCRIPTS_PATH/git_make_pull_request.js
 alias grbi='git rebase -i'
+alias grc='git add . && git rebase --continue'
 alias gs='git status'
 alias gsf='git show --pretty="" --name-only'
-alias gu=$SCRIPTS_PATH/git_update.sh
-alias unstage='reset'
-
-#TMUX
-alias tmux-session-switch=$SCRIPTS_PATH/tmux-session-switch.sh
+alias gu=$SCRIPTS_PATH/git_update.js
 
 #Tree
 alias t=tree

@@ -135,12 +135,9 @@
   "editor.tabSize": 2,
   "eslint.debug": true,
   "eslint.lintTask.options": "",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "mssql.connections": [
     {
       "server": "{{put-server-name-here}}",
