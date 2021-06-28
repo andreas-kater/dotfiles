@@ -1,4 +1,4 @@
-# DVELP dotfiles
+# Wakeflow dotfiles
 
 Get your machine purring with this selection of dotfiles.
 
