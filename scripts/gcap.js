@@ -3,7 +3,7 @@ const { runCommands } = require("./runCommands");
 
 runCommands([
   'git add .',
-  `git commit -m "${process.argv[2]}"`,
-  'git push',
+  'git commit --amend --no-edit',
+  'git push -f',
   'git --no-pager log --oneline --decorate --graph --all -n 12',
 ])
